@@ -1,0 +1,179 @@
+*{
+    --main:#A8CA7E;
+    --first:#efe3dfd3;
+    --background:#fafafafd;
+    --second:#91b5a9;
+    --third:#edca7f;
+    --text: black;
+    --warning: red;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second);
+    color:white;
+}
+.logo{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+.nav-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color:white;
+    padding: 1rem;
+    display: block;
+}
+.nav-links li:hover{
+    background-color: var(--third);
+}
+.toggle-button{
+    position:absolute;
+    top:.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+@media(max-width: 600px){
+    .toggle-button{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+        width:100%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links ul{
+        width:100%;
+        flex-direction: column;
+    }
+    .nav-links li{
+        text-align: center;
+    }
+    .nav-links li a{
+        padding: .5rem 1rem;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+}
+body{
+    background-color: var(--background);
+}
+header .game-title{
+    margin-top: 30px;
+    text-align: center;
+}
+.lead{
+    margin-top: 45px;
+}
+.lead .text-success{
+    color:var(--warning);
+}
+.display-word{
+    margin-top: 30px;
+    font-size: xx-large;
+}
+.form{
+    margin-top:30px;
+    width:54%;
+    height:50px;
+    text-align: left;
+    border-color: rgba(0, 0, 0, 0.595);
+    border-radius: 5px;
+}
+.time-column{
+    margin-top:40px;
+    font-size:medium;
+}
+.score-column{
+    margin-top:10px;
+    font-size:medium;
+}
+.instruction-card h5{
+    font-size: small;
+}
+
+.instruction-card{
+   
+    display: block;
+    margin: 7px 0;
+    margin-top:50px;
+    font-size: smaller;
+   text-align: center;
+   align-items: center;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color:var(--first);
+}
+/*Home*/
+.learn{
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+.learn ul li {
+    padding:23px;
+    display: inline-block;
+    margin: 0 20px;
+    border:none;
+    background-color: #91b5a9;
+    height: 70px;
+    margin:1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+.learn ul li a{
+    margin:2rem;
+    text-decoration: none;
+    color:black;
+}
+.learn ul li:hover{
+    background-color:#7892b5;
+}
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 25%;
+    padding: 5rem;
+    padding-left: 8rem;
+}
+.column1{
+    flex: 1%;
+    padding: 5rem;
+    padding-right:8rem;
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400&family=Fredericka+the+Great&family=Poiret+One&family=Voltaire&family=Yeseva+One&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>typing game</title>
+</head>
+<body>
+<div class="game">
+    <header>
+        <nav class="nav">
+            <div class="logo">cyrillic</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="index.html">Tipp Test</a></li>
+                    <li><a href="EinfachesLernen.html">Tipp Aufgaben</a></li>
+                    <li><a href="TippAufgaben.html">Einfaches Lernen</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="game-title">
+            <h1>Tipp Test</h1>
+        </div>
+    </header>
+    <div class="text-center">
+      <div class="text-row">
+        <div class="text-columm">
+            <p class="lead">Tippe das russische Wort innerhalb von 
+                <span class="text-success" id="sec">15</span>
+                Sekunden ein:
+            </p>
+            <div class="display-word" id="current-word">
+                <h2>Привет</h2>
+            </div>
+            <input type="text" class="form"
+            placeholder="Start typing..." id="word-input" autofocus>
+            <h4 class="message" id="Message-type"></h4>
+
+            <div class="time-row">
+                <div class="time-column">
+                    <h3>⏱️Übrige Zeit: <span id="time">0</span>
+                    </h3>
+                </div>
+                <div class="score-column">
+                    <h3>Punkte: <span id="score">0</span></h3>
+                </div>
+            </div>
+            <div class="instruction-row">
+                <div class="instruction-column">
+                    <div class="instruction-card">
+                        <h5>Anleitung</h5>
+                        <p>Tippe jedes Wort/jeden Satz innerhalb der<br> gegebenen Zeit
+                            um Punkte zu bekommen.<br> Um noch mal zu Spielen tippe einfach das<br>
+                             aktuelle Wort ein</p>
+                    </div>
+                </div>
+            </div>   
+         </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
